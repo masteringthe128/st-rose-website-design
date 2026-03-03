@@ -1,0 +1,245 @@
+/*
+Theme Name: St. Rose of Lima
+Theme URI: https://example.com/
+Author: masteringthe128
+Description: A traditional Catholic theme for St. Rose of Lima parish
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+:root {
+  --gold: #D4AF37;
+  --beige: #F5F0E6;
+  --light-brown: #8B7355;
+  --dark-brown: #4A3728;
+  --white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  line-height: 1.8;
+  color: var(--dark-brown);
+  background-color: var(--beige);
+  font-size: 16px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--light-brown);
+  font-family: Georgia, serif;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+h1 {
+  font-size: 2.5rem;
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 0.5rem;
+}
+h2 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  margin-bottom: 1rem;
+}
+a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--light-brown);
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: var(--light-brown);
+  color: var(--beige);
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 5px solid var(--gold);
+}
+
+header h1 {
+  color: var(--gold);
+  border: none;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.site-subtitle {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--beige);
+}
+
+/* Navigation */
+nav {
+  background-color: var(--dark-brown);
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: var(--beige);
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: var(--gold);
+  color: var(--dark-brown);
+  text-decoration: none;
+}
+
+/* Main Content */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+}
+
+.content {
+  flex: 1;
+}
+
+.sidebar {
+  flex: 0 0 300px;
+}
+
+/* Posts/Bulletins */
+article {
+  background-color: var(--white);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-left: 5px solid var(--gold);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+article h2 {
+  margin-top: 0;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: var(--light-brown);
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--beige);
+  padding-bottom: 1rem;
+}
+
+.post-content {
+  margin: 1.5rem 0;
+}
+
+.pdf-download {
+  display: inline-block;
+  background-color: var(--gold);
+  color: var(--dark-brown);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.pdf-download:hover {
+  background-color: var(--light-brown);
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Welcome Section */
+.welcome {
+  background-color: var(--white);
+  padding: 2rem;
+  border-left: 5px solid var(--gold);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.welcome h2 {
+  color: var(--light-brown);
+}
+
+/* Footer */
+footer {
+  background-color: var(--light-brown);
+  color: var(--beige);
+  padding: 2rem;
+  text-align: center;
+  border-top: 5px solid var(--gold);
+  margin-top: 3rem;
+}
+
+footer a {
+  color: var(--gold);
+}
+
+footer a:hover {
+  color: var(--white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex: 1;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  article {
+    padding: 1rem;
+  }
+}
