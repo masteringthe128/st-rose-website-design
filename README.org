@@ -10,3 +10,4 @@ This repository will hold a new design for the St. Rose web site. St. Rose is a 
 - They would like the bulletin posts and the PDFs to automatically expire after a set period of time (2 weeks).
 
 Feel free to recommend plugins to accomplish these requirements.
+
