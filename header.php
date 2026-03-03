@@ -1,17 +1,27 @@
-<header>
-    <div class="header-content" style="display: flex; align-items: center;">
-        <div class="header-text">
-            <h1>Page Title</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header-image" style="flex-shrink: 0; margin-left: auto;">
-            <img src="saintrose-vignette.jpg" alt="Saint Rose Vignette" style="max-width: 100%; height: auto;">
-        </div>
-    </div>
-</header>
+<?php
+/**
+     - * The header for our theme.
+     - *
+     - * Displays all of the <head> section and everything up until <div id="content">
+     - *
+     - * @package WordPress
+     - * @subpackage YourThemeName
+     - * @since YourThemeVersion
+     - */
+
+?><!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+    <?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+    <header>
+        <h1><?php bloginfo( 'name' ); ?></h1>
+        <nav><?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?></nav>
+    </header>
+    <div id="content">

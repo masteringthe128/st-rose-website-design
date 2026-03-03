@@ -87,28 +87,6 @@ header h1 {
   color: var(--beige);
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.header img {
-    max-width: 100%;
-    height: auto;
-}
-
-@media (max-width: 600px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .header img {
-        margin-top: 10px;
-    }
-}
-
 /* Navigation */
 nav {
   background-color: var(--dark-brown);
