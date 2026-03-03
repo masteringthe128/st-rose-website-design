@@ -1,0 +1,12 @@
+* St. Rose of Lima new web site theme
+
+This repository will hold a new design for the St. Rose web site. St. Rose is a traditional, Latin Mass, Catholic parish. Requirements for the design are as follows:
+
+- Should probably be a Wordpress site, since the site contents will be updated by non-technical people.
+- Must be mobile- and desktop-friendly.
+- Should have a traditional, classic look.
+- Posts on the site will mainly be the weekly bulletin in PDF format, which should be easily downloaded, and announcements for news and events.
+- The parish secretary needs to be able to upload the PDFs easily.
+- They would like the bulletin posts and the PDFs to automatically expire after a set period of time (2 weeks).
+
+Feel free to recommend plugins to accomplish these requirements.
